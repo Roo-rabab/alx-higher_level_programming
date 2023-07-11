@@ -1,4 +1,26 @@
-#!/usr/bin/python3
-for letter in range(97, 123):
-    if chr(letter) is not 'q' and chr(letter) is not 'e':
-        print("{}".format(chr(letter)), end="")
+#include <stdio.h>
+/**
+ *main - Entry point
+ *Return: Always 0 (Success)
+ */
+int main(void)
+{
+
+char ch = 'a', chUpper = 'A';
+
+while (ch <= 'z')
+{
+putchar(ch);
+ch++;
+}
+
+while (chUpper <= 'Z')
+{
+putchar(chUpper);
+chUpper++;
+}
+
+putchar('\n');
+
+return (0);
+}
