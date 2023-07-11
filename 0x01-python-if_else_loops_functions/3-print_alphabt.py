@@ -1,26 +1,4 @@
-#include <stdio.h>
-/**
- *main - Entry point
- *Return: Always 0 (Success)
- */
-int main(void)
-{
-
-char ch = 'a', chUpper = 'A';
-
-while (ch <= 'z')
-{
-putchar(ch);
-ch++;
-}
-
-while (chUpper <= 'Z')
-{
-putchar(chUpper);
-chUpper++;
-}
-
-putchar('\n');
-
-return (0);
-}
+#!/usr/bin/python3
+for letter in range(97, 123):
+    if chr(letter) != 'q' and chr(letter)!= 'e':
+        print("{}".format(chr(letter)), end="")
